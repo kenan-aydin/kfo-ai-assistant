@@ -7,6 +7,8 @@ with open("test_cases.json", "r", encoding="utf-8") as file:
     test_cases = json.load(file)
 
 correct = 0
+category_correct = 0
+urgency_correct = 0
 
 # Jede Testanfrage einzeln überprüfen
 for number, test in enumerate(test_cases, start=1):
@@ -25,6 +27,12 @@ for number, test in enumerate(test_cases, start=1):
         category_ok = category == test["expected_category"]
         urgency_ok = urgency == test["expected_urgency"]
 
+        if category_ok:
+            category_correct += 1
+
+        if urgency_ok:
+            urgency_correct += 1
+
         if category_ok and urgency_ok:
             correct += 1
             print("BESTANDEN")
@@ -38,3 +46,6 @@ for number, test in enumerate(test_cases, start=1):
         print(f"FEHLER: {error}")
 
 print(f"\nErgebnis: {correct} von {len(test_cases)} Tests bestanden")
+print(f"Kategorie richtig: {category_correct} von {len(test_cases)}")
+print(f"Dringlichkeit richtig: {urgency_correct} von {len(test_cases)}")
+print(f"Gesamtgenauigkeit: {correct / len(test_cases) * 100:.1f}%")
