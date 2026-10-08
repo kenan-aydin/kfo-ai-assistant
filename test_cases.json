@@ -1,0 +1,32 @@
+[
+  {
+    "inquiry": "Ich kann morgen leider nicht kommen. Können wir einen anderen Tag ausmachen?",
+    "expected_category": "Termin",
+    "expected_urgency": "normal"
+  },
+  {
+    "inquiry": "Kann ich meine Rechnung per Überweisung bezahlen?",
+    "expected_category": "Kosten / Rechnung",
+    "expected_urgency": "normal"
+  },
+  {
+    "inquiry": "Meine Zahnspange verursacht starke Schmerzen und mein Zahnfleisch blutet stark.",
+    "expected_category": "Zahnspange / Behandlung",
+    "expected_urgency": "dringend"
+  },
+  {
+    "inquiry": "Ich möchte mich als neuer Patient anmelden.",
+    "expected_category": "Neupatient",
+    "expected_urgency": "normal"
+  },
+  {
+    "inquiry": "Der Draht meiner Zahnspange hat sich gelöst und verletzt meine Wange.",
+    "expected_category": "Zahnspange / Behandlung",
+    "expected_urgency": "dringend"
+  },
+  {
+    "inquiry": "Haben Sie am Freitag geöffnet?",
+    "expected_category": "Sonstiges",
+    "expected_urgency": "normal"
+  }
+]
