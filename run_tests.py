@@ -1,6 +1,6 @@
 
 import json
-from app import analyze_inquiry
+from ai_logic import analyze_inquiry
 
 # Unsere vorbereiteten Testfälle laden
 with open("test_cases.json", "r", encoding="utf-8") as file:
