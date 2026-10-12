@@ -81,6 +81,22 @@ Start the application:
 streamlit run app.py
 ```
 
+## Testing & Evaluation
+
+The project includes an automated evaluation script (`run_tests.py`) and six synthetic test cases (`test_cases.json`).
+
+The evaluation checks:
+- Inquiry category classification
+- Urgency detection
+
+**Initial evaluation results:**
+- Category classification: 6/6 correct
+- Urgency detection: 6/6 correct
+- Overall: 6/6 test cases passed
+
+These results are based on a small synthetic test set and do not represent general model accuracy or clinical validation.
+
+
 ## Safety & Privacy
 This project is intended for demonstration and educational purposes.
 - Do not enter real patient data.
