@@ -49,10 +49,12 @@ The application analyzes the inquiry and returns:
 - Git / GitHub
 
 ## Project Structure
-
-```text
+```Text
 kfo-ai-assistant/
 ├── app.py
+├── ai_logic.py
+├── run_tests.py
+├── test_cases.json
 ├── practice_knowledge.txt
 ├── requirements.txt
 ├── README.md
