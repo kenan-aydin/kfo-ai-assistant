@@ -38,6 +38,10 @@ The application analyzes the inquiry and returns:
 5. The LLM generates a professional response draft.
 6. The draft must be reviewed by practice staff before being sent.
 
+## Application Screenshot
+
+![KFO AI Assistant Demo](kfo-ai-assistant-demo.png)
+
 ## Tech Stack
 
 - Python
